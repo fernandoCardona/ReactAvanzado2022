@@ -8,6 +8,8 @@ export const AddCategory = ( { setCategories } ) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        //validacion input
         if(inputValue.trim().length < 2){
             return
         }
