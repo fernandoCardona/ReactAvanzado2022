@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory'
+import { GifGrid } from './components/GifGrid';
 
 export const GitExpertapp = () => {
 
         //const categories = ['Risas','Minions','One Punch'];
-        const [categories, setCategories] = useState(['Risas','Minions','One Punch']);
+        const [categories, setCategories] = useState(['One Punch']);
 
-        const handleAdd = () => {
-            //Opcion1
-            //setCategories(...categories, 'Hunters');
-            //Opcion2
-            //setCategories(cats =>[...categories, 'Hunters']);
-        }
+         
 
   return (
     <>
@@ -21,9 +17,12 @@ export const GitExpertapp = () => {
    
     <ol>
         {
-            categories.map( category => {
-                return <li key={category}>{category}</li>
-            })
+            categories.map( category =>  
+              <GifGrid 
+                key = { category } 
+                category = { category }
+              />
+            )
         }
     </ol>    
      </>
