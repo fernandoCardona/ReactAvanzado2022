@@ -16,7 +16,7 @@ export const AddCategory = ( { setCategories } ) => {
         else if(inputValue === ''){
             return
         }else{
-            setCategories(cats =>[...cats, inputValue]);
+            setCategories(cats =>[ inputValue, ...cats ]);
         }
         
     }
