@@ -1,0 +1,25 @@
+body {
+    padding: 70px;
+}
+hr {
+    width: 100%;
+}
+body div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+body form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+body div button { padding: 5px 50px !important;}
