@@ -12,7 +12,7 @@ export const MultipleCustomHooks = () => {
   return (
     <>
         <div >
-            <h1>BreakingBad Quotes</h1>
+            <h1> BreakingBad Quotes </h1>
             <hr />
             {
                 loading 
@@ -30,6 +30,7 @@ export const MultipleCustomHooks = () => {
                         </blockquote>
                     )
             }
+
             <button className="btn btn-primary" onClick={ increment }>
                 Siguiente quote
             </button>
