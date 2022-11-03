@@ -14,6 +14,7 @@ export const LayoutEffect = () => {
     useLayoutEffect(() => {
 
         setBoxSize(pTag.current.getBoundingClientRect());
+        
     }, [quote])
 
     return (
