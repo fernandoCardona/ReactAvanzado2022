@@ -16,8 +16,5 @@ export const RealExapleRef = () => {
         <button className="btn btn-secondary" onClick={ handleClick }>Show/Hide</button>
     </>
     
-   
-
-
   )
 }
