@@ -14,7 +14,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import { RealExapleRef } from './compoonents/04-useRef/RealExapleRef';
 //import { LayoutEffect } from './compoonents/05-useLayoutEffect/LayoutEffect'; 
 //import { Memorize } from './compoonents/06-useMemo/Memorize';
-import { MemoHook } from './compoonents/06-useMemo/MemoHook';
+//import { MemoHook } from './compoonents/06-useMemo/MemoHook';
+import { CallbackHook } from './compoonents/06-useMemo/CallbackHook';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,14 +29,10 @@ root.render(
     {/* <MultipleCustomHooks/> */}
     {/* <FocusScreen/> */}
     {/* <RealExapleRef/> */}
-<<<<<<< HEAD
-    <LayoutEffect/>
-    
-=======
     {/* <LayoutEffect/> */}
     {/* <Memorize/> */}
-    <MemoHook/>
->>>>>>> useMemo
+    {/* <MemoHook/> */}
+    <CallbackHook/>
   </React.StrictMode> 
 );
   
