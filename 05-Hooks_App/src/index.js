@@ -35,6 +35,8 @@ root.render(
     {/* <MemoHook/> */}
     {/* <CallbackHook/> */}
     <Padre/>
+
+    
   </React.StrictMode> 
 );
   
