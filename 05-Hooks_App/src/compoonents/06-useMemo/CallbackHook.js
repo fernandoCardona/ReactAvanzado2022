@@ -16,7 +16,6 @@ export const CallbackHook = () => {
       [ setCounter ],
     )
     
-
     return (
         <div>
             <h1>CallbackHook: { counter }</h1>
