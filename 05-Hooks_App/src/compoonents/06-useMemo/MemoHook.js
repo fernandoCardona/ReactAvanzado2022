@@ -10,7 +10,6 @@ export const MemoHook = () => {
     const { counter, increment } = useCounterBreakingBad(5000)
     const [show, setShow] = useState(true);
 
-
     const memoProcesoPesado = useMemo(() => procesoPesado( counter ), [ counter ])
 
     return (
