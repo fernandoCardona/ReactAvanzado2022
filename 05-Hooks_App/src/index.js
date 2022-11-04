@@ -15,7 +15,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import { LayoutEffect } from './compoonents/05-useLayoutEffect/LayoutEffect'; 
 //import { Memorize } from './compoonents/06-useMemo/Memorize';
 //import { MemoHook } from './compoonents/06-useMemo/MemoHook';
-import { CallbackHook } from './compoonents/06-useMemo/CallbackHook';
+//import { CallbackHook } from './compoonents/06-useMemo/CallbackHook';
+import { Padre } from './compoonents/07-tarea-memo/Padre'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,7 +33,8 @@ root.render(
     {/* <LayoutEffect/> */}
     {/* <Memorize/> */}
     {/* <MemoHook/> */}
-    <CallbackHook/>
+    {/* <CallbackHook/> */}
+    <Padre/>
   </React.StrictMode> 
 );
   
