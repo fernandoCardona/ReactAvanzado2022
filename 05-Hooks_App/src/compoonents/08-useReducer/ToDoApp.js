@@ -1,6 +1,7 @@
 import React, { useEffect, useReducer } from 'react';
 import { toDoReducer } from './toDoReducer';
 import { useForm } from '../../hooks/useForm';
+import { ToDoList } from './ToDoList'; 
 
 import './styles.css';
 
@@ -31,6 +32,31 @@ export const ToDoApp = () => {
         localStorage.setItem( 'toDos', JSON.stringify(toDos) )
     }, [toDos]);
 
+    
+
+    const handleDelete = ( toDoId ) => {
+         console.log( toDoId )
+
+         //2-Generamos la action
+         const action ={ 
+            type: 'delete',
+            payload: toDoId
+        }
+        //3-Mediante dispatch enviamos al compponente la accion.
+        dispatch( action );
+        
+    }
+
+    const handleToggle = ( toDoId ) => {
+        dispatch( {
+            type: 'toggle',
+            payload: toDoId
+        })
+    }
+    // const handleAddToDo =  (newTodo) => {
+        
+    // }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if( description.trim().length <= 1 ){
@@ -53,9 +79,6 @@ export const ToDoApp = () => {
         dispatch( action );
         reset();
     }
-
-
-
     return (
         <>
             <div className="header">
@@ -85,8 +108,8 @@ export const ToDoApp = () => {
             </div>
              <div>
                 <div className="row">
-                    <div className="">
-                        <ul className="list-group list-group-flush">
+                    <div className=""> 
+                        {/* <ul className="list-group list-group-flush">
                         { 
                             toDos.map( (toDo, i) => (
                                 <li
@@ -94,11 +117,18 @@ export const ToDoApp = () => {
                                     className="list-group-item"
                                 >
                                     <div className="toDo-cont">
-                                        <p><strong>{ i +1 }.</strong> { toDo.desc } </p>
+                                        <p 
+                                            className={`${ toDo.done && 'complete' }`}
+                                            onClick={ () => { handleToggle( toDo.id ) } }
+                                        >
+                                            <strong>{ i +1 }.</strong> { toDo.desc } 
+                                        </p>
+
                                         <div className="cont-buttons">
 
                                             <button 
                                                 className="btn btn-danger"
+                                                onClick={ () => handleDelete( toDo.id ) }
                                             >
                                                 Borrar
                                             </button>
@@ -112,7 +142,13 @@ export const ToDoApp = () => {
                               
                             ))
                         }
-                        </ul>
+                        </ul> */}
+                        <ToDoList 
+                            toDos={ toDos } 
+                            handleDelete = { handleDelete } 
+                            handleToggle ={ handleToggle } 
+                           
+                        />
 
                     </div>
                     
