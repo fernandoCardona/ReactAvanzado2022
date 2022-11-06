@@ -53,10 +53,7 @@ export const ToDoApp = () => {
             payload: toDoId
         })
     }
-    // const handleAddToDo =  (newTodo) => {
-        
-    // }
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         if( description.trim().length <= 1 ){
