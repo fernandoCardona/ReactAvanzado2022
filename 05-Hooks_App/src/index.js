@@ -16,8 +16,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import { Memorize } from './compoonents/06-useMemo/Memorize';
 //import { MemoHook } from './compoonents/06-useMemo/MemoHook';
 //import { CallbackHook } from './compoonents/06-useMemo/CallbackHook';
-import { Padre } from './compoonents/07-tarea-memo/Padre'
-
+//import { Padre } from './compoonents/07-tarea-memo/Padre'
+//import { IntroReducer } from './compoonents/08-useReducer/Intro-reducer';
+import { ToDoApp } from './compoonents/08-useReducer/ToDoApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,9 +35,9 @@ root.render(
     {/* <Memorize/> */}
     {/* <MemoHook/> */}
     {/* <CallbackHook/> */}
-    <Padre/>
-
-    
+    {/* <Padre /> */}
+    {/* <IntroReducer/> */}
+    <ToDoApp/>
   </React.StrictMode> 
 );
   
