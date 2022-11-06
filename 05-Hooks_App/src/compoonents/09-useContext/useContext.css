@@ -1,0 +1,54 @@
+body {
+    padding: 60px;
+}
+hr {
+    width: 100%;
+}
+div.header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+li {
+    width: 100%;
+}
+.header-nav{
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:baseline;
+    gap:30px;
+    background-color: black;font-size: 20px;
+    line-height:40px;
+    padding: 15px;
+}
+.nav-links {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex;
+    align-items: baseline; 
+    gap:10px;
+}
+.Link {
+    Color:#FFF;
+    text-decoration: none;
+}
+
+.Link:hover {
+    color: lightblue;
+}
+.Link-icon {
+    font-size: 1.6em;
+}
+.Link-icon:hover {
+    color:coral;
+}
+.active {
+    color: lightblue;
+}
