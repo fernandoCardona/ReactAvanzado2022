@@ -6,8 +6,12 @@
     padding: 7px 10px 7px 10px;
     cursor: pointer;
     transition: background-color .3s ease;
-    &:focus{
+    transition: color .3s ease;
+    &:focus {
         outline: none;
+    }
+    &:hover {
+        color:darken($color: white, $amount: 20)
     }
     
 }

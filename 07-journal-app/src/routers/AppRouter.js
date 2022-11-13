@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router, Redirect, Route,
     Switch
   } from 'react-router-dom';
-import { JournalScreen } from '../component/Journal/JournalScreen';
+import { JournalScreen } from '../component/journal/JournalScreen';
 import { AuthRouter } from './AuthRouter';
 
 
