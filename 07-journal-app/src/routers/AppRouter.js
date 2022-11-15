@@ -11,7 +11,6 @@ import { login } from '../actions/auth';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
 
-
 export const AppRouter = () => {
 
   const dispatch = useDispatch();
