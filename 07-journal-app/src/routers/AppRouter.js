@@ -6,10 +6,11 @@ import { useDispatch } from 'react-redux';
 import { firebase } from '../firebase/firebase-config';
 import { AuthRouter } from './AuthRouter';
 
-import { JournalScreen } from '../component/journal/JournalScreen';
+import { JournalScreen } from '../component/Journal/JournalScreen';
 import { login } from '../actions/auth';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
+import { startLoadingNotes } from '../actions/notes';
 
 export const AppRouter = () => {
 
@@ -19,12 +20,15 @@ export const AppRouter = () => {
 
   useEffect(() => {
         
-    firebase.auth().onAuthStateChanged( (user) => {
+    firebase.auth().onAuthStateChanged( async ( user ) => {
 
         if ( user?.uid ) {
             dispatch( login( user.uid, user.displayName ) );
             setIsLoggedIn( true );
-        } else {
+
+            dispatch( startLoadingNotes( user.uid ) );
+
+        } else { 
             setIsLoggedIn( false );
         }
 
@@ -36,7 +40,7 @@ export const AppRouter = () => {
 
   if ( checking ) {
     return (
-        <h1>Espere...</h1>
+        <h1>Waait...</h1>
     )
   }
 
