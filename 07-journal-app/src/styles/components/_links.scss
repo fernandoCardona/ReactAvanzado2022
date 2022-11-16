@@ -1,0 +1,7 @@
+.link {
+    text-decoration: none;
+    color: darken($color: $primary, $amount:15);
+    &:focus{
+        text-decoration: underline;
+    }
+}
