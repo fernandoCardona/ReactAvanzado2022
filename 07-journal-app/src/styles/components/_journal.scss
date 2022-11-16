@@ -46,9 +46,12 @@
     margin-top : 30px;
 }
 .journal__entry {
+    
     display: flex;
+    flex-direction: revert;
+    justify-content: space-between;align-items: center;
     border-radius: 4px;
-    color:$dark-grey;
+    color: #363636;
     background-color: white;
     margin-bottom: 10px;
     overflow: hidden;
