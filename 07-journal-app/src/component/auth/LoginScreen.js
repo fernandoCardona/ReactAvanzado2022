@@ -6,6 +6,8 @@ import validator from 'validator';
 import { removeError, setError } from '../../actions/ui';
 import { startGoogleLogin, startLoginEmailPassword } from '../../actions/auth';
 
+import 'animate.css';
+
 export const LoginScreen = () => {
   
   const dispatch = useDispatch();
@@ -55,7 +57,7 @@ export const LoginScreen = () => {
               </div>
             )
           }
-          <form onSubmit={ handleLogin } className="">
+          <form onSubmit={ handleLogin } className="animate__animated animate__fadeIn animate__faster">
             <input  
               typet="email"
               placeholder="Your email"
