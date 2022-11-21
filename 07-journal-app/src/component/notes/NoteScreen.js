@@ -17,9 +17,9 @@ export const NoteScreen = () => {
 
   useEffect(() => {
     
-    dispatch( activeNote( formValues.id, { ...formValues} ) );
+    dispatch( activeNote( formValues.id, { ...formValues } ) );
 
-  }, [ formValues ]);
+  }, [ formValues, dispatch ]);
 
 
   useEffect(() => {

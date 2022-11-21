@@ -35,4 +35,4 @@ export const startLoadingNotes = ( uid ) => {
 export const setNotes = ( notes ) => ({
     type: types.notesLoad,
     payload: notes
-})
+});
